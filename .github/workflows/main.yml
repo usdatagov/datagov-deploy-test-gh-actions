@@ -16,4 +16,4 @@ jobs:
     - name: install python dependencies
       run: pipenv sync --dev
     - name: install ansible roles
-      run: pipenv run make update-vendor-role
+      run: pipenv run make update-vendor-force
