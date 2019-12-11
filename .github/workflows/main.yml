@@ -17,3 +17,5 @@ jobs:
       run: pipenv sync --dev
     - name: install ansible roles
       run: pipenv run make update-vendor-force
+    - name: deploy jumpbox
+      run: cd ansible && pipenv run ansible-playbook jumpbox.yml
